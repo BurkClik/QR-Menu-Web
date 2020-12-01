@@ -40,6 +40,24 @@
       });
     }
   </script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+ 
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyB31F8PqUT0WINGgA4hBRUO7jlz_3iP_TQ",
+      authDomain: "qr-menu-mobile.firebaseapp.com",
+      databaseURL: "https://qr-menu-mobile.firebaseio.com",
+      projectId: "qr-menu-mobile",
+      storageBucket: "qr-menu-mobile.appspot.com",
+      messagingSenderId: "678027848879",
+      appId: "1:678027848879:web:7c7e4b68a60edeeedf785a",
+      measurementId: "G-32W76SZ5W5"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

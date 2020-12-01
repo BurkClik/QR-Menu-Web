@@ -5,5 +5,13 @@ ThemeData theme() {
   return ThemeData(
     visualDensity: VisualDensity.adaptivePlatformDensity,
     scaffoldBackgroundColor: kPrimaryColor,
+    floatingActionButtonTheme: floatingActionButtonThemeData(),
+    primaryColor: Colors.black,
+  );
+}
+
+FloatingActionButtonThemeData floatingActionButtonThemeData() {
+  return FloatingActionButtonThemeData(
+    backgroundColor: Colors.black,
   );
 }
