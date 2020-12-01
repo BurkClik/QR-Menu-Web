@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:qr_web/routs.dart';
 import 'package:qr_web/screens/home.dart';
+import 'package:qr_web/theme/theme.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: theme(),
       initialRoute: Home.routeName,
       routes: routes,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
